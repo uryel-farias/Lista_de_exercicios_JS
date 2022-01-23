@@ -14,6 +14,9 @@ header {
     width: 100%;
     padding: 15px;
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
     justify-content: space-between;
     background: rgb(99, 0, 140);
     color: white;
@@ -21,15 +24,35 @@ header {
 
 }
 
+ul {
+    display: flex;
+}
+
 ul li {
     list-style: none;
     text-decoration: none;
+    margin-left: 15px;
+    padding: 5px;
+    transition: background 0.5s;
+    
+    
 }
+
+ul li:hover{
+    cursor: pointer;
+    box-sizing: border-box;
+    background: darkviolet;
+    border-radius: 15px 0px 15px 0px;
+   
+    
+
+}
+
 
 h1 {
     font-size: 3em;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 150px;
     padding-bottom: 50px;
     color: white;
 }
@@ -47,24 +70,88 @@ h3 {
     font-size: 1.5em;
 }
 
+/* base-------------------------------------------*/
+
 button {
 
     margin-top: 10px;
-    
+    height: 40px;
+    width: 150px;
     padding: 5px;
     font-family: monospace;
     font-size: 1.3em;
     background: rgb(244, 220, 255);
     border: 2px solid black;
     border-radius: 4px;
+    transition: 0.5s;
 }
 
 button:hover {
     font-weight: bold;
     background: rgb(224, 154, 253);
+    
 }
 
+.rotulos{
+    font-size: 1.4em;
+}
+.entradas{
+    font-size: 1.4em;
+    border: solid 2px black;
+    border-radius: 4px;
+    margin-top: 10px;
+    height: 40px;
+}
+
+.entradas:hover{
+    background: rgb(244, 220, 255);
+}
+
+#resultadoFinalExercicios {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.4em;
+    
+}
+
+/* exercicio 1.01-------------------------------------------*/
 .ex_sequencial {
     margin: 15px;
     text-align: justify;
 }
+
+#ex01_camada_1{
+    width: 100%px;
+    height: 60px;
+    display: flex;
+}
+
+/* exercicio 1.02-------------------------------------------*/
+#ex02_camada_1 {
+    width: 100%;
+    
+}
+
+#conteudo_1-02 {
+    padding-top: 10px;
+    
+}
+
+#conteudo_1-02 input {
+    width: 100px;
+    height: 40px;
+   
+}
+
+
+
+/* exercicio 1.03-------------------------------------------*/
+#questao3a{
+    width: 100px;
+}
+
+#questao3b{
+    width: 100px;
+}
+
+
