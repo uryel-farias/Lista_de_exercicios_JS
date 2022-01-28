@@ -107,7 +107,7 @@ button:hover {
     background: rgb(244, 220, 255);
 }
 
-#resultadoFinalExercicios {
+.resultadoFinalExercicios {
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 1.4em;
