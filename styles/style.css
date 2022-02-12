@@ -70,6 +70,35 @@ h3 {
     font-size: 1.5em;
 }
 
+footer{
+    width: 100%;
+    padding: 50px 20px 50px 20px ;
+    font-size: 2em;
+    display: flex;
+    
+}
+
+footer div {
+    width: 100%;
+}
+
+footer div a{
+text-decoration: none;
+color: white;
+
+}
+
+footer div p {
+    color: white;
+}
+
+footer div {
+    text-align: center;
+}
+
+
+
+
 /* base-------------------------------------------*/
 
 button {
@@ -154,4 +183,19 @@ button:hover {
     width: 100px;
 }
 
+/* exercicio 1.04-------------------------------------------*/
 
+#questao4a, #questao4b, #questao4c, #questao4d {
+ width: 100px;
+} 
+
+
+/* exercicio 1.05-------------------------------------------*/
+
+#questao5 {
+    width: 100px;
+}
+/* exercicio 1.06-------------------------------------------*/
+#questao6 {
+    width: 100px;
+}
