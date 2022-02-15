@@ -80,3 +80,18 @@ let botao_ex06 = document.querySelector('#botao1_06');
 botao_ex06.addEventListener('click', Ativar1_sextoEx);
 
 //exercicio 1.07----------------------------------
+
+let Ativar1_setimoEx = () => {
+    let resultadoEx7 = document.querySelector('#resultado_1-07');
+    let entradaEx7 = parseFloat(document.querySelector('#questao7').value);
+
+    let areaDoQuadrado = entradaEx7 * entradaEx7;
+
+    return resultadoEx7.innerHTML = (`O valor da área do quadrado é: ${areaDoQuadrado}` + "<br>"+ `O valor do dobro dessa área é: ${areaDoQuadrado*2}`);
+    
+}
+
+let botao_ex07 = document.querySelector('#botao1_07');
+botao_ex07.addEventListener('click', Ativar1_setimoEx);
+
+//exercicio 1.08----------------------------------
