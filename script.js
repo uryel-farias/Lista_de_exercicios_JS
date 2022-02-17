@@ -95,3 +95,71 @@ let botao_ex07 = document.querySelector('#botao1_07');
 botao_ex07.addEventListener('click', Ativar1_setimoEx);
 
 //exercicio 1.08----------------------------------
+
+let Ativar1_oitavoEx = () => {
+    let resultadoEx8 = document.querySelector('#resultado_1-08');
+    let entrada1Ex8 = parseFloat(document.querySelector('#questao8a').value);
+    let entrada2Ex8 = parseFloat(document.querySelector('#questao8b').value);
+
+    let salarioMes = entrada1Ex8 * entrada2Ex8;
+
+    return resultadoEx8.innerHTML = (`O valor do salário do mês é: ${salarioMes.toFixed(2)}`);
+
+}
+
+let botao_ex08 = document.querySelector('#botao1_08');
+botao_ex08.addEventListener('click', Ativar1_oitavoEx);
+
+//exercicio 1.09----------------------------------
+
+let Ativar1_nonoEx = () => {
+    let resultadoEx9 = document.querySelector('#resultado_1-09');
+    let entrada1Ex9 = parseFloat(document.querySelector('#questao9').value);
+
+    let grausCelsius = 5 * ((entrada1Ex9- 32)/9);
+
+    return resultadoEx9.innerHTML = (`${entrada1Ex9}° Fahrenheit é equivalente à ${grausCelsius.toFixed(1)}° Celsius.`);
+
+}
+
+let botao_ex09 = document.querySelector('#botao1_09');
+botao_ex09.addEventListener('click', Ativar1_nonoEx);
+
+//exercicio 1.10----------------------------------
+
+let Ativar1_decimoEx = () => {
+    let resultadoEx10 = document.querySelector('#resultado_1-10');
+    let entrada1Ex10 = parseFloat(document.querySelector('#questao10').value);
+
+    let grausFahrenheit = entrada1Ex10 * 1.8 + 32;
+
+    return resultadoEx10.innerHTML = (`${entrada1Ex10}° Celsius é equivalente à ${grausFahrenheit.toFixed(1)}° Fahrenheit.`);
+}
+
+let botao_ex10 = document.querySelector('#botao1_10');
+botao_ex10.addEventListener('click', Ativar1_decimoEx);
+
+//exercicio 1.11----------------------------------
+
+let Ativar1_decimoPrimeiroEx = () => {
+    let entrada1Ex11 = parseInt(document.querySelector('#questao11a').value);
+    let entrada2Ex11 = parseInt(document.querySelector('#questao11b').value);
+    let entrada3Ex11 = parseFloat(document.querySelector('#questao11c').value);
+
+    let resultadoEx11a = document.querySelector('#item1Ex11'); 
+    let resultadoEx11b = document.querySelector('#item2Ex11'); 
+    let resultadoEx11c = document.querySelector('#item3Ex11'); 
+
+    let calcularItem1 = (entrada1Ex11 * 2) * (entrada2Ex11/2);
+    let calcularItem2 = (entrada1Ex11 * 3) + entrada3Ex11;
+    let calcularItem3 = entrada3Ex11 * entrada3Ex11 * entrada3Ex11;
+
+    resultadoEx11a.innerHTML = (`${calcularItem1}`);
+    resultadoEx11b.innerHTML = (`${calcularItem2}`);
+    resultadoEx11c.innerHTML = (`${calcularItem3.toFixed(2)}`);
+    
+}
+
+let botao_ex11 = document.querySelector('#botao1_11');
+botao_ex11.addEventListener('click', Ativar1_decimoPrimeiroEx);
+
