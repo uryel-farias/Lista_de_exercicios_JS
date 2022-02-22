@@ -209,3 +209,32 @@ let Ativar1_DecimoQuartoEX = () => {
 
 let botao_ex14 = document.querySelector('#botao1_14');
 botao_ex14.addEventListener('click', Ativar1_DecimoQuartoEX);
+
+//exercicio 1.15----------------------------------
+
+let Ativar1_DecimoQuintoEX = () => {
+    let entrada1Ex15a = parseFloat(document.querySelector('#questao15a').value);
+    let entrada1Ex15b = parseFloat(document.querySelector('#questao15b').value);
+    
+    let resultadoEx15a = document.querySelector('#resultado_15-1');
+    let resultadoEx15b = document.querySelector('#resultado_15-2');
+    let resultadoEx15c = document.querySelector('#resultado_15-3');
+    let resultadoEx15d = document.querySelector('#resultado_15-4');
+    let resultadoEx15e = document.querySelector('#resultado_15-5');
+
+    let salarioBruto = entrada1Ex15a * entrada1Ex15b;
+    let descontoIr = salarioBruto * 0.11;
+    let descontoInss = salarioBruto * 0.08;
+    let descontoSindicato = salarioBruto * 0.05;
+    let salarioLiquido = salarioBruto - (descontoInss + descontoIr + descontoSindicato);
+    
+    resultadoEx15a.innerHTML =(`${salarioBruto.toFixed(2)}.`);
+    resultadoEx15b.innerHTML =(`${descontoIr.toFixed(2)}.`);
+    resultadoEx15c.innerHTML =(`${descontoInss.toFixed(2)}.`);
+    resultadoEx15d.innerHTML =(`${descontoSindicato.toFixed(2)}.`);
+    resultadoEx15e.innerHTML =(`${salarioLiquido.toFixed(2)}.`);
+}
+
+
+let botao_ex15 = document.querySelector('#botao1_15');
+botao_ex15.addEventListener('click', Ativar1_DecimoQuintoEX);
