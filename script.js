@@ -163,3 +163,49 @@ let Ativar1_decimoPrimeiroEx = () => {
 let botao_ex11 = document.querySelector('#botao1_11');
 botao_ex11.addEventListener('click', Ativar1_decimoPrimeiroEx);
 
+//exercicio 1.12----------------------------------
+
+let Ativar1_DecimoSegundoEX = () => {
+    let entrada1Ex12 = parseFloat(document.querySelector('#questao12').value);
+    let resultadoEx12 = document.querySelector('#resultado_1-12');
+
+    let calcularImc = ((72.7 * entrada1Ex12)/100) - 58;
+
+    return resultadoEx12.innerHTML = (`Dada sua Altura como ${entrada1Ex12} cm seu peso ideia seria ${calcularImc.toFixed(2)} kg.`);
+}
+
+let botao_ex12 = document.querySelector('#botao1_12');
+botao_ex12.addEventListener('click', Ativar1_DecimoSegundoEX);
+
+//exercicio 1.13----------------------------------
+
+let Ativar1_DecimoTerceiroEX = () => {
+    let entrada1Ex13 = parseFloat(document.querySelector('#questao13').value);
+    let resultadoEx13a = document.querySelector('#resultado_1-13a');
+    let resultadoEx13b = document.querySelector('#resultado_1-13b');
+
+    let calcularImcHomem = ((72.7 * entrada1Ex13)/100) - 58;
+    let calcularImcMulher = ((62.1 * entrada1Ex13)/100) - 47.7;
+
+    resultadoEx13a.innerHTML = (`${calcularImcHomem.toFixed(2)} kg.`);
+    resultadoEx13b.innerHTML = (`${calcularImcMulher.toFixed(2)} kg.`);
+}
+
+let botao_ex13 = document.querySelector('#botao1_13');
+botao_ex13.addEventListener('click', Ativar1_DecimoTerceiroEX);
+
+//exercicio 1.14----------------------------------
+
+let Ativar1_DecimoQuartoEX = () => {
+    let entrada1Ex14 = parseFloat(document.querySelector('#questao14').value);
+    let resultadoEx14a = document.querySelector('#resultado_1-14a');
+    let resultadoEx14b = document.querySelector('#resultado_1-14b');
+
+    let ValorMulta = entrada1Ex14 > 50? ('R$ ' + ((entrada1Ex14 - 50) * 4).toFixed(2)) : 'Não há multa, pois não exedeu o limite espeficado.';
+
+    resultadoEx14a.innerHTML = (`${entrada1Ex14} KG.`);
+    resultadoEx14b.innerHTML = (`${ValorMulta}.`);
+}
+
+let botao_ex14 = document.querySelector('#botao1_14');
+botao_ex14.addEventListener('click', Ativar1_DecimoQuartoEX);

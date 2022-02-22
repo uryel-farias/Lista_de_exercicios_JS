@@ -58,8 +58,10 @@ h1 {
 }
 
 .sequencial{
-    width: 900px;
+    max-width: 900px;
+    min-width: 400px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     margin: 0 auto;
     background: white;
@@ -147,6 +149,8 @@ button:hover {
 .ex_sequencial {
     margin: 15px;
     text-align: justify;
+    
+    
 }
 
 #ex01_camada_1{
@@ -231,5 +235,20 @@ button:hover {
     width: 100px;
 }
 #questao11c {
+    width: 100px;
+}
+
+/* exercicio 1.12-------------------------------------------*/
+#questao12 {
+    width: 100px;
+}
+
+/* exercicio 1.13-------------------------------------------*/
+#questao13 {
+    width: 100px;
+}
+
+/* exercicio 1.14-------------------------------------------*/
+#questao14 {
     width: 100px;
 }
