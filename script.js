@@ -238,3 +238,17 @@ let Ativar1_DecimoQuintoEX = () => {
 
 let botao_ex15 = document.querySelector('#botao1_15');
 botao_ex15.addEventListener('click', Ativar1_DecimoQuintoEX);
+
+//exercicio 1.16----------------------------------
+
+let Ativar1_DecimoSextoEX = () => {
+    let entrada1Ex16 = parseFloat(document.querySelector('#questao16').value);
+    let resultadoEx16 = document.querySelector('#resultado_1-16');
+
+    let quantidadeLatas = Math.ceil((entrada1Ex16 / 3) / 18);
+    
+    return resultadoEx16.innerHTML = (`Será(ão) necessário(s) ${quantidadeLatas} lata(s) de tinta.`);
+}
+
+let botao_ex16 = document.querySelector('#botao1_16');
+botao_ex16.addEventListener('click', Ativar1_DecimoSextoEX);

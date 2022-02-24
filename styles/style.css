@@ -145,6 +145,10 @@ button:hover {
     
 }
 
+span {
+    font-size: 1.4em;
+}
+
 /* exercicio 1.01-------------------------------------------*/
 .ex_sequencial {
     margin: 15px;
@@ -258,5 +262,10 @@ button:hover {
     width: 100px;
 }
 #questao15b {
+    width: 100px;
+}
+
+/* exercicio 1.16-------------------------------------------*/
+#questao16 {
     width: 100px;
 }
