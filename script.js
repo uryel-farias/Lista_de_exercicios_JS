@@ -273,7 +273,7 @@ let Ativar1_DecimoSetimoEX = () => {
     resultadoEx17a.innerHTML = (`R$ ${(somenteLatas18Litros * 80).toFixed(2)}.`);
     resultadoEx17b.innerHTML = (`R$ ${(somentelatas3Litros * 25).toFixed(2)}.`);
     resultadoEx17c.innerHTML = (`R$ ${entrada1Ex17 <= 64.8? (somentelatas3Litros*25).toFixed(2): latasAte108Metros.toFixed(2)}.`);
-//se metros maior que 108  
+ 
 }
 
 let botao_ex17 = document.querySelector('#botao1_17');
@@ -281,3 +281,16 @@ botao_ex17.addEventListener('click', Ativar1_DecimoSetimoEX);
 
 //exercicio 1.18----------------------------------
 
+
+let Ativar1_DecimoOitavoEX = () => {
+    let entrada1Ex18a = parseFloat(document.querySelector('#questao18a').value);
+    let entrada1Ex18b = parseFloat(document.querySelector('#questao18b').value);
+    let resultadoEx18 = document.querySelector('#resultado_1-18');
+
+    let calcularTempoDownload = Math.ceil((entrada1Ex18a / (entrada1Ex18b/8))/60);
+
+    return resultadoEx18.innerHTML = (`O tempo de download do arquivo será de ${calcularTempoDownload} minuto(s).`);
+} 
+
+let botao_ex18 = document.querySelector('#botao1_18');
+botao_ex18.addEventListener('click', Ativar1_DecimoOitavoEX);
