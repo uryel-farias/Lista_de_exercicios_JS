@@ -252,3 +252,32 @@ let Ativar1_DecimoSextoEX = () => {
 
 let botao_ex16 = document.querySelector('#botao1_16');
 botao_ex16.addEventListener('click', Ativar1_DecimoSextoEX);
+
+//exercicio 1.17----------------------------------
+
+let Ativar1_DecimoSetimoEX = () => {
+    let entrada1Ex17 = parseFloat(document.querySelector('#questao17').value);
+    let resultadoEx17a = document.querySelector('#resultado_1-17a');
+    let resultadoEx17b = document.querySelector('#resultado_1-17b');
+    let resultadoEx17c = document.querySelector('#resultado_1-17c');
+
+    let somenteLatas18Litros = Math.ceil((entrada1Ex17 / 6) / 18);
+    let somentelatas3Litros = Math.ceil((entrada1Ex17 /6) / 3.6);
+
+    let parteLatas18Litros = (entrada1Ex17 / 6) / 18;
+    let latas18Arredondada = Math.floor(parteLatas18Litros);
+    let sobraDe18litros = parteLatas18Litros % 18;
+    let latas3LitrosArredondada = (Math.ceil((sobraDe18litros / 6) / 3.6))*25;
+    let latasAte108Metros = entrada1Ex17 <=108 && entrada1Ex17 > 64.8? somenteLatas18Litros*80 : latas18Arredondada*80 + latas3LitrosArredondada;   
+
+    resultadoEx17a.innerHTML = (`R$ ${(somenteLatas18Litros * 80).toFixed(2)}.`);
+    resultadoEx17b.innerHTML = (`R$ ${(somentelatas3Litros * 25).toFixed(2)}.`);
+    resultadoEx17c.innerHTML = (`R$ ${entrada1Ex17 <= 64.8? (somentelatas3Litros*25).toFixed(2): latasAte108Metros.toFixed(2)}.`);
+//se metros maior que 108  
+}
+
+let botao_ex17 = document.querySelector('#botao1_17');
+botao_ex17.addEventListener('click', Ativar1_DecimoSetimoEX);
+
+//exercicio 1.18----------------------------------
+
