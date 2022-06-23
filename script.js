@@ -287,10 +287,85 @@ let Ativar1_DecimoOitavoEX = () => {
     let entrada1Ex18b = parseFloat(document.querySelector('#questao18b').value);
     let resultadoEx18 = document.querySelector('#resultado_1-18');
 
-    let calcularTempoDownload = Math.ceil((entrada1Ex18a / (entrada1Ex18b/8))/60);
+    let calcularTempoDownload = Number(Math.ceil((entrada1Ex18a / (entrada1Ex18b/8))/60));
 
     return resultadoEx18.innerHTML = (`O tempo de download do arquivo será de ${calcularTempoDownload} minuto(s).`);
 } 
 
 let botao_ex18 = document.querySelector('#botao1_18');
 botao_ex18.addEventListener('click', Ativar1_DecimoOitavoEX);
+
+
+
+
+//--------------------Inicio da Estrutura Condicional-----------------
+//exercicio 2.01------------------------------------------------------
+
+let Ativar2_primeiroEx = () => {
+    let entrada2Ex01a = parseFloat(document.querySelector('#entrada-2-01a').value);
+    let entrada2Ex01b = parseFloat(document.querySelector('#entrada-2-01b').value);
+    let resultado2Ex01 = document.querySelector('#resultado-2-01');
+
+    let maiorValor = 0;
+
+    if(entrada2Ex01a > entrada2Ex01b){
+        maiorValor = entrada2Ex01a;
+    } else if (entrada2Ex01b > entrada2Ex01a) {
+        maiorValor = entrada2Ex01b;
+    } else {
+        maiorValor = entrada2Ex01a + ', neste caso os valores são iguais';
+    }
+
+    return resultado2Ex01.innerHTML = (`O maior valor informado é ${maiorValor}.`);
+}
+
+let botao2_ex01 = document.querySelector('#botao2_01');
+botao2_ex01.addEventListener('click', Ativar2_primeiroEx);
+
+
+//exercicio 2.02------------------------------------------------------
+
+let Ativar2_segundoEx = () => {
+    let entrada2Ex02 = parseFloat(document.querySelector('#entrada-2-02').value);
+    let resultado2Ex02 = document.querySelector('#resultado-2-02');
+    let solucaoEx2;
+    if (entrada2Ex02 > 0){
+        solucaoEx2 = 'O valor ' + entrada2Ex02 + ' é um número positivo.';
+    } else if (entrada2Ex02 < 0){
+        solucaoEx2 = 'O valor ' + entrada2Ex02 + ' é um número negativo.';
+    } else {
+        solucaoEx2 = 'O valor ' + entrada2Ex02 + ' é um número neutro.';
+    }
+
+    return resultado2Ex02.innerHTML = (solucaoEx2);
+}
+
+let botao2_ex02 = document.querySelector('#botao2_02');
+botao2_ex02.addEventListener('click', Ativar2_segundoEx);
+//exercicio 2.03------------------------------------------------------
+//exercicio 2.04------------------------------------------------------
+//exercicio 2.05------------------------------------------------------
+//exercicio 2.06------------------------------------------------------
+//exercicio 2.07------------------------------------------------------
+//exercicio 2.08------------------------------------------------------
+//exercicio 2.09------------------------------------------------------
+//exercicio 2.10------------------------------------------------------
+//exercicio 2.11------------------------------------------------------
+//exercicio 2.12------------------------------------------------------
+//exercicio 2.13------------------------------------------------------
+//exercicio 2.14------------------------------------------------------
+//exercicio 2.15------------------------------------------------------
+//exercicio 2.16------------------------------------------------------
+//exercicio 2.17------------------------------------------------------
+//exercicio 2.18------------------------------------------------------
+//exercicio 2.19------------------------------------------------------
+//exercicio 2.20------------------------------------------------------
+//exercicio 2.21------------------------------------------------------
+//exercicio 2.22------------------------------------------------------
+//exercicio 2.23------------------------------------------------------
+//exercicio 2.24------------------------------------------------------
+//exercicio 2.25------------------------------------------------------
+//exercicio 2.26------------------------------------------------------
+//exercicio 2.27------------------------------------------------------
+//exercicio 2.28------------------------------------------------------
+

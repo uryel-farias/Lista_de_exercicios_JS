@@ -158,7 +158,7 @@ span {
 }
 
 #ex01_camada_1{
-    width: 100%px;
+    width: 100%;
     height: 60px;
     display: flex;
 }
@@ -275,10 +275,47 @@ span {
 }
 
 /* exercicio 1.18-------------------------------------------*/
-
 #questao18a {
     width: 100px;
 }
 #questao18b {
     width: 100px;
 }
+
+
+
+/* Inicio da Estrutura de Decisão-------------------------------------------*/
+
+h2{
+    font-size: 3em;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    color: white;
+}
+
+.estruturaDecisao-bg {
+    max-width: 900px;
+    min-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto;
+    background: white;
+    padding: 10px;
+}
+
+
+
+.conteudo {
+    margin: 15px;
+    text-align: justify;
+}
+
+#dadosDeEntrada_decisao_exercicio input {
+    width: 100px;
+    height: 40px;
+   
+}
+
+/* exercicio 2.01-------------------------------------------*/
