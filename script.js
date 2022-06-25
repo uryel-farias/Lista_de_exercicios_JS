@@ -342,7 +342,34 @@ let Ativar2_segundoEx = () => {
 
 let botao2_ex02 = document.querySelector('#botao2_02');
 botao2_ex02.addEventListener('click', Ativar2_segundoEx);
+
 //exercicio 2.03------------------------------------------------------
+
+let Ativar2_terceiroEx = () => {
+    let entrada2Ex03 = document.querySelector('#entrada-2-03').value;
+    let resultado2Ex03 = document.querySelector('#resultado-2-03');
+
+    let fminusculo = 'f';
+    let fmaiusculo = 'F';
+    let mminusculo = 'm';
+    let mmaiusculo = 'M';
+    let mostrarletra = '';
+
+    if(entrada2Ex03 === fminusculo || entrada2Ex03 === fmaiusculo){
+        mostrarletra = 'F - Feminino'
+    } else if (entrada2Ex03 === mmaiusculo || entrada2Ex03 === mminusculo){
+        mostrarletra = 'M - Masculino';
+    } else {
+        mostrarletra = 'Sexo Inválido';
+    }
+    return resultado2Ex03.innerHTML = (mostrarletra);
+
+}
+
+
+let botao2_ex03 = document.querySelector('#botao2_03');
+botao2_ex03.addEventListener('click', Ativar2_terceiroEx);
+
 //exercicio 2.04------------------------------------------------------
 //exercicio 2.05------------------------------------------------------
 //exercicio 2.06------------------------------------------------------
