@@ -371,6 +371,36 @@ let botao2_ex03 = document.querySelector('#botao2_03');
 botao2_ex03.addEventListener('click', Ativar2_terceiroEx);
 
 //exercicio 2.04------------------------------------------------------
+
+let Ativar2_quartoEx = () => {
+    let entrada2Ex04 = document.querySelector('#entrada-2-04').value;
+    let resultado2Ex04 = document.querySelector('#resultado-2-04');
+    let vogais = ['a','e','i','o','u'];
+    let verificarVogal = false;
+    let eVogal = 'O digito que você informou é uma VOGAL.'
+    let eConsoante = 'O digito que você informou é uma CONSOANTE.'
+
+    for(let index = 0; index < vogais.length; index++){
+        if (entrada2Ex04 == vogais[index]){
+            verificarVogal = true;
+        }
+    }
+
+    if (verificarVogal){
+        resultado2Ex04.innerHTML = (eVogal);
+    }else {
+        resultado2Ex04.innerHTML = (eConsoante);
+    }
+
+  
+
+    
+    }   
+
+
+
+let botao2_ex04 = document.querySelector('#botao2_04');
+botao2_ex04.addEventListener('click', Ativar2_quartoEx);
 //exercicio 2.05------------------------------------------------------
 //exercicio 2.06------------------------------------------------------
 //exercicio 2.07------------------------------------------------------
