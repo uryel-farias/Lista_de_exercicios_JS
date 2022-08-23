@@ -402,6 +402,25 @@ let Ativar2_quartoEx = () => {
 let botao2_ex04 = document.querySelector('#botao2_04');
 botao2_ex04.addEventListener('click', Ativar2_quartoEx);
 //exercicio 2.05------------------------------------------------------
+
+let Ativar2_quintoEX = () => {
+    let entrada2Ex05a = +document.querySelector('#entrada-2-05a').value;
+    let entrada2Ex05b = +document.querySelector('#entrada-2-05b').value;
+    let resultado2Ex05 = document.querySelector('#resultado-2-05');
+    let media = (entrada2Ex05a + entrada2Ex05b)/2;
+
+    if(media === 10){
+        resultado2Ex05.innerHTML = ('Media = ' + media.toFixed(2) + ' --- Aluno(a) Aprovado com Destinção!');
+    }else if( media < 7){
+        resultado2Ex05.innerHTML = ('Media = ' + media.toFixed(2) + ' --- Aluno(a) Reprovado!');
+    } else if (media >= 7 ){
+        resultado2Ex05.innerHTML = ('Media = ' + media.toFixed(2) + ' --- Aluno(a) Aprovado!');
+    }
+}
+
+let botao2_ex05 = document.querySelector('#botao2_05');
+botao2_ex05.addEventListener('click', Ativar2_quintoEX);
+
 //exercicio 2.06------------------------------------------------------
 //exercicio 2.07------------------------------------------------------
 //exercicio 2.08------------------------------------------------------
