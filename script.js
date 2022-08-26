@@ -422,6 +422,30 @@ let botao2_ex05 = document.querySelector('#botao2_05');
 botao2_ex05.addEventListener('click', Ativar2_quintoEX);
 
 //exercicio 2.06------------------------------------------------------
+
+let Ativar2_sextoEX = () => {
+    let entrada2Ex06a = +document.querySelector('#entrada-2-06a').value;
+    let entrada2Ex06b = +document.querySelector('#entrada-2-06b').value;
+    let entrada2Ex06c = +document.querySelector('#entrada-2-06c').value;
+    let resultado2Ex06 = document.querySelector('#resultado-2-06');
+
+    let maiorNumero = 0;
+
+    if(entrada2Ex06a >= entrada2Ex06b){
+        maiorNumero = entrada2Ex06a;
+    } else if (entrada2Ex06b >= maiorNumero) {
+        maiorNumero = entrada2Ex06b;
+    } 
+    if (entrada2Ex06c > maiorNumero) {
+        maiorNumero = entrada2Ex06c;
+    } 
+
+    resultado2Ex06.innerHTML = ('O maior número digitado foi: ' + maiorNumero + '.');
+}
+
+let botao2_ex06 = document.querySelector('#botao2_06');
+botao2_ex06.addEventListener('click', Ativar2_sextoEX);
+
 //exercicio 2.07------------------------------------------------------
 //exercicio 2.08------------------------------------------------------
 //exercicio 2.09------------------------------------------------------

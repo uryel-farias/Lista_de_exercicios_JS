@@ -32,10 +32,9 @@ ul li {
     list-style: none;
     text-decoration: none;
     margin-left: 15px;
-    padding: 5px;
+    padding: 5px 10px;
+    border-radius: 15px 0px 15px 0px;
     transition: background 0.5s;
-    
-    
 }
 
 ul li:hover{
@@ -43,11 +42,12 @@ ul li:hover{
     box-sizing: border-box;
     background: darkviolet;
     border-radius: 15px 0px 15px 0px;
-   
-    
-
 }
 
+li a {
+    color: white;
+    text-decoration: none;
+}
 
 h1 {
     font-size: 3em;
@@ -132,6 +132,7 @@ button:hover {
     border-radius: 4px;
     margin-top: 10px;
     height: 40px;
+    width: 100px;
 }
 
 .entradas:hover{
@@ -312,10 +313,5 @@ h2{
     text-align: justify;
 }
 
-#dadosDeEntrada_decisao_exercicio input {
-    width: 100px;
-    height: 40px;
-   
-}
 
 /* exercicio 2.01-------------------------------------------*/
