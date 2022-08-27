@@ -447,8 +447,106 @@ let botao2_ex06 = document.querySelector('#botao2_06');
 botao2_ex06.addEventListener('click', Ativar2_sextoEX);
 
 //exercicio 2.07------------------------------------------------------
+
+let Ativar2_setimoEX = () => {
+    let entrada2Ex07a = +document.querySelector('#entrada-2-07a').value;
+    let entrada2Ex07b = +document.querySelector('#entrada-2-07b').value;
+    let entrada2Ex07c = +document.querySelector('#entrada-2-07c').value;
+    let resultado2Ex07 = document.querySelector('#resultado-2-07');
+
+    let menorNumero = entrada2Ex07a  ;
+
+    if(entrada2Ex07a <= entrada2Ex07b){
+        menorNumero = entrada2Ex07a;
+    } else if (entrada2Ex07b <= menorNumero) {
+        menorNumero = entrada2Ex07b;
+    } 
+    if (entrada2Ex07c < menorNumero) {
+        menorNumero = entrada2Ex07c;
+    } 
+
+    resultado2Ex07.innerHTML = ('O menor número digitado foi: ' + menorNumero + '.');
+}
+
+let botao2_ex07 = document.querySelector('#botao2_07');
+botao2_ex07.addEventListener('click', Ativar2_setimoEX);
 //exercicio 2.08------------------------------------------------------
+
+let Ativar2_oitavoEX = () => {
+    let entrada2Ex08a = +document.querySelector('#entrada-2-08a').value;
+    let entrada2Ex08b = +document.querySelector('#entrada-2-08b').value;
+    let entrada2Ex08c = +document.querySelector('#entrada-2-08c').value;
+    let resultado2Ex08a = document.querySelector('#resultado-2-08a');
+    let resultado2Ex08b = document.querySelector('#resultado-2-08b');
+
+
+    let menorNumero = entrada2Ex08a  ;
+
+    if(entrada2Ex08a <= entrada2Ex08b){
+        menorNumero = entrada2Ex08a;
+    } else if (entrada2Ex08b <= menorNumero) {
+        menorNumero = entrada2Ex08b;
+    } 
+    if (entrada2Ex08c < menorNumero) {
+        menorNumero = entrada2Ex08c;
+    } 
+
+    let maiorNumero = 0;
+
+    if(entrada2Ex08a >= entrada2Ex08b){
+        maiorNumero = entrada2Ex08a;
+    } else if (entrada2Ex08b >= maiorNumero) {
+        maiorNumero = entrada2Ex08b;
+    } 
+    if (entrada2Ex08c > maiorNumero) {
+        maiorNumero = entrada2Ex08c;
+    } 
+
+    resultado2Ex08a.innerHTML = ('O produto mais barato: R$ ' + menorNumero + '.');
+    resultado2Ex08b.innerHTML = ('O produto mais caro: R$ ' + maiorNumero + '.');
+}
+
+let botao2_ex08 = document.querySelector('#botao2_08');
+botao2_ex08.addEventListener('click', Ativar2_oitavoEX);
 //exercicio 2.09------------------------------------------------------
+
+let Ativar2_nonoEX = () => {
+    let entrada2Ex09a = +document.querySelector('#entrada-2-09a').value;
+    let entrada2Ex09b = +document.querySelector('#entrada-2-09b').value;
+    let entrada2Ex09c = +document.querySelector('#entrada-2-09c').value;
+    let resultado2Ex09 = document.querySelector('#resultado-2-09');
+
+
+    let menorNumero = entrada2Ex09a  ;
+
+    if(entrada2Ex09a <= entrada2Ex09b){
+        menorNumero = entrada2Ex09a;
+    } else if (entrada2Ex09b <= menorNumero) {
+        menorNumero = entrada2Ex09b;
+    } 
+    if (entrada2Ex09c < menorNumero) {
+        menorNumero = entrada2Ex09c;
+    } 
+
+    let maiorNumero = 0;
+
+    if(entrada2Ex09a >= entrada2Ex09b){
+        maiorNumero = entrada2Ex09a;
+    } else if (entrada2Ex09b >= maiorNumero) {
+        maiorNumero = entrada2Ex09b;
+    } 
+    if (entrada2Ex09c > maiorNumero) {
+        maiorNumero = entrada2Ex09c;
+    } 
+
+    let somaDosNumeros = entrada2Ex09a + entrada2Ex09b + entrada2Ex09c;
+    let numeroMeio = somaDosNumeros - maiorNumero - menorNumero; 
+
+    resultado2Ex09.innerHTML = ('Números digitados em ordem crescente: : ' + menorNumero + ' - ' + numeroMeio + ' - ' + maiorNumero + '.' );
+}
+
+let botao2_ex09 = document.querySelector('#botao2_09');
+botao2_ex09.addEventListener('click', Ativar2_nonoEX);
 //exercicio 2.10------------------------------------------------------
 //exercicio 2.11------------------------------------------------------
 //exercicio 2.12------------------------------------------------------
