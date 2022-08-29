@@ -569,6 +569,51 @@ let Ativar2_decimoEx = () => {
 let botao2_ex10 = document.querySelector('#botao2_10');
 botao2_ex10.addEventListener('click', Ativar2_decimoEx);
 //exercicio 2.11------------------------------------------------------
+
+let Ativar2_decimoPrimeiroEx = () => {
+    let entrada2Ex11 = +document.querySelector('#entrada-2-11').value;
+    let resultado2Ex11a = document.querySelector('#resultado-2-11a');
+    let resultado2Ex11b = document.querySelector('#resultado-2-11b');
+    let resultado2Ex11c = document.querySelector('#resultado-2-11c');
+    let resultado2Ex11d = document.querySelector('#resultado-2-11d');
+
+    let salarioAntes, percentual, valorAumento, salarioReajuste;
+    if(entrada2Ex11 > 0 && entrada2Ex11 <= 280){
+        salarioAntes = entrada2Ex11;
+        percentual = "20%";
+        salarioReajuste = salarioAntes * 1.2;
+        valorAumento = salarioReajuste - salarioAntes;
+    }else if (entrada2Ex11 > 280 && entrada2Ex11 <= 700){
+        salarioAntes = entrada2Ex11;
+        percentual = "15%";
+        salarioReajuste = salarioAntes * 1.15;
+        valorAumento = salarioReajuste - salarioAntes;
+    }else if (entrada2Ex11 > 700 && entrada2Ex11 <= 1500){
+        salarioAntes = entrada2Ex11;
+        percentual = "10%";
+        salarioReajuste = salarioAntes * 1.1;
+        valorAumento = salarioReajuste - salarioAntes;
+    }else if (entrada2Ex11 > 1500){
+        salarioAntes = entrada2Ex11;
+        percentual = "5%";
+        salarioReajuste = salarioAntes * 1.05;
+        valorAumento = salarioReajuste - salarioAntes;
+    } else {
+        resultado2Ex11a.innerHTML = ('Valor Inválido!');
+        resultado2Ex11b.innerHTML = ('');
+        resultado2Ex11c.innerHTML = ('');
+        resultado2Ex11d.innerHTML = ('');
+    }
+
+    resultado2Ex11a.innerHTML = ('Sálário antes do reajuste: R$ ' + salarioAntes.toFixed(2));
+    resultado2Ex11b.innerHTML = ('Percentual de aumento: ' + percentual);
+    resultado2Ex11c.innerHTML = ('Valor do aumento: R$ ' + valorAumento.toFixed(2));
+    resultado2Ex11d.innerHTML = ('Salário após o aumento: R$ ' + salarioReajuste.toFixed(2));
+
+}
+
+let botao2_ex11 = document.querySelector('#botao2_11');
+botao2_ex11.addEventListener('click', Ativar2_decimoPrimeiroEx);
 //exercicio 2.12------------------------------------------------------
 //exercicio 2.13------------------------------------------------------
 //exercicio 2.14------------------------------------------------------
