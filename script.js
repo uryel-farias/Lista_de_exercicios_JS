@@ -547,7 +547,27 @@ let Ativar2_nonoEX = () => {
 
 let botao2_ex09 = document.querySelector('#botao2_09');
 botao2_ex09.addEventListener('click', Ativar2_nonoEX);
+
 //exercicio 2.10------------------------------------------------------
+
+let Ativar2_decimoEx = () => {
+    let entrada2Ex10 = document.querySelector('#entrada-2-10').value;
+    let resultado2Ex10 = document.querySelector('#resultado-2-10');
+
+    if(entrada2Ex10==='M' || entrada2Ex10==='m'){
+        resultado2Ex10.innerHTML = ('Bom Dia!');
+    }else if (entrada2Ex10==='V' || entrada2Ex10==='v'){
+        resultado2Ex10.innerHTML = ('Boa Tarde!');
+    }else if (entrada2Ex10==='N' || entrada2Ex10==='n'){
+        resultado2Ex10.innerHTML = ('Boa Noite!');
+    }else {
+        resultado2Ex10.innerHTML = ('Valor Inválido!');
+    }
+
+}
+
+let botao2_ex10 = document.querySelector('#botao2_10');
+botao2_ex10.addEventListener('click', Ativar2_decimoEx);
 //exercicio 2.11------------------------------------------------------
 //exercicio 2.12------------------------------------------------------
 //exercicio 2.13------------------------------------------------------
