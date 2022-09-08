@@ -614,7 +614,62 @@ let Ativar2_decimoPrimeiroEx = () => {
 
 let botao2_ex11 = document.querySelector('#botao2_11');
 botao2_ex11.addEventListener('click', Ativar2_decimoPrimeiroEx);
+
 //exercicio 2.12------------------------------------------------------
+let Ativar2_decimoSegundoEx = () => {
+    let entrada2Ex12a = +document.querySelector('#entrada-2-12a').value;
+    let entrada2Ex12b = +document.querySelector('#entrada-2-12b').value;
+
+    let resultado2Ex12a = document.querySelector('#resultado-2-12a');
+    let resultado2Ex12b = document.querySelector('#resultado-2-12b');
+    let resultado2Ex12c = document.querySelector('#resultado-2-12c');
+    let resultado2Ex12d = document.querySelector('#resultado-2-12d');
+    let resultado2Ex12e = document.querySelector('#resultado-2-12e');
+    let resultado2Ex12f = document.querySelector('#resultado-2-12f');
+
+    let salarioBruto = entrada2Ex12a * entrada2Ex12b;
+    let inss = 0.10; 
+    let fgts = 0.11;
+    let salarioFinal, descontoIr, descontoFgts, totalDescontos;
+
+
+    if(salarioBruto <= 900 ){
+        descontoIr = 0;
+        descontoInss = salarioBruto * inss;
+        descontoFgts = salarioBruto * fgts;
+        totalDescontos = descontoInss;
+        salarioFinal = salarioBruto - descontoInss;
+    }else if ((salarioBruto > 900) && (salarioBruto <= 1500)){
+        descontoIr = salarioBruto * 0.05;
+        descontoInss = salarioBruto * inss;
+        descontoFgts = salarioBruto * fgts;
+        totalDescontos = descontoIr + descontoInss;
+        salarioFinal = salarioBruto - totalDescontos;
+    }else if ((salarioBruto > 1500) && (salarioBruto <= 2500)){
+        descontoIr = salarioBruto * 0.10;
+        descontoInss = salarioBruto * inss;
+        descontoFgts = salarioBruto * fgts;
+        totalDescontos = descontoIr + descontoInss;
+        salarioFinal = salarioBruto - totalDescontos;
+    }else if ( salarioBruto > 2500){
+        descontoIr = salarioBruto * 0.20;
+        descontoInss = salarioBruto * inss;
+        descontoFgts = salarioBruto * fgts;
+        totalDescontos = descontoIr + descontoInss;
+        salarioFinal = salarioBruto - totalDescontos;
+    }
+
+    resultado2Ex12a.innerHTML = ('Sálário Bruto: R$ ' + salarioBruto.toFixed(2));
+    resultado2Ex12b.innerHTML = ('(-) IR: R$ ' + descontoIr.toFixed(2));
+    resultado2Ex12c.innerHTML = ('(-) INSS: R$ ' + descontoInss.toFixed(2));
+    resultado2Ex12d.innerHTML = ('FGTS (11%): R$ ' + descontoFgts.toFixed(2));
+    resultado2Ex12e.innerHTML = ('Total de descontos: R$ ' + totalDescontos.toFixed(2));
+    resultado2Ex12f.innerHTML = ('Salário Líquido: R$ ' + salarioFinal.toFixed(2));
+
+}
+
+let botao2_ex12 = document.querySelector('#botao2_12');
+botao2_ex12.addEventListener('click', Ativar2_decimoSegundoEx);
 //exercicio 2.13------------------------------------------------------
 //exercicio 2.14------------------------------------------------------
 //exercicio 2.15------------------------------------------------------
