@@ -671,6 +671,42 @@ let Ativar2_decimoSegundoEx = () => {
 let botao2_ex12 = document.querySelector('#botao2_12');
 botao2_ex12.addEventListener('click', Ativar2_decimoSegundoEx);
 //exercicio 2.13------------------------------------------------------
+
+let Ativar2_decimoTerceiroEx = () => {
+
+    let entrada2Ex13 = +document.querySelector('#entrada-2-13').value;
+    let resultado2Ex13 = document.querySelector('#resultado-2-13');
+
+    switch (true) {
+        case entrada2Ex13 == 1:
+            resultado2Ex13.innerHTML = (`O número 1 corresponde ao Domingo.`);
+            break;
+        case entrada2Ex13 == 2:
+            resultado2Ex13.innerHTML = (`O número 2 corresponde à Segunda-feira.`);
+            break;
+        case entrada2Ex13 == 3:
+            resultado2Ex13.innerHTML = (`O número 3 corresponde à Terça-feira.`);
+            break;
+        case entrada2Ex13 == 4:
+            resultado2Ex13.innerHTML = (`O número 4 corresponde à Quarta-feira.`);
+            break;
+        case entrada2Ex13 == 5:
+            resultado2Ex13.innerHTML = (`O número 5 corresponde à Quinta-feira.`);
+            break;
+        case entrada2Ex13 == 6:
+            resultado2Ex13.innerHTML = (`O número 6 corresponde à Sexta-feira.`);
+            break;
+        case entrada2Ex13 == 7:
+            resultado2Ex13.innerHTML = (`O número 7 corresponde ao Sábado.`);
+            break;
+        default:
+            resultado2Ex13.innerHTML = (`O número INVÁLIDO.`);
+            break;
+    }
+} 
+
+let botao2_ex13 = document.querySelector('#entrada-2-13');
+botao2_ex13.addEventListener('click', Ativar2_decimoTerceiroEx);
 //exercicio 2.14------------------------------------------------------
 //exercicio 2.15------------------------------------------------------
 //exercicio 2.16------------------------------------------------------
