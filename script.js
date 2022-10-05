@@ -708,6 +708,33 @@ let Ativar2_decimoTerceiroEx = () => {
 let botao2_ex13 = document.querySelector('#entrada-2-13');
 botao2_ex13.addEventListener('click', Ativar2_decimoTerceiroEx);
 //exercicio 2.14------------------------------------------------------
+
+let Ativar2_decimoQuartoEx = () => {
+    let entrada2Ex14a = +document.querySelector('#entrada-2-14a').value;
+    let entrada2Ex14b = +document.querySelector('#entrada-2-14b').value;
+    let resultado2Ex14 = document.querySelector('#resultado-2-14');
+
+    let media = ((entrada2Ex14a + entrada2Ex14b)/2).toFixed(1);
+
+    if (entrada2Ex14a < 0 || entrada2Ex14b < 0){
+        resultado2Ex14.innerHTML = (`Valores negativos não são aceitos!`);
+    } else if(media >= 9 && media <= 10){
+        resultado2Ex14.innerHTML = (`Média de Aproveitamento A. Média das notas = ${media}.`);
+    } else if (media >= 7.5 && media < 9 ){
+        resultado2Ex14.innerHTML = (`Média de Aproveitamento B. Média das notas = ${media}.`);
+    } else if (media >= 6 && media < 7.5){
+        resultado2Ex14.innerHTML = (`Média de Aproveitamento C. Média das notas = ${media}.`);
+    } else if  (media >= 4 && media < 6){
+        resultado2Ex14.innerHTML = (`Média de Aproveitamento D. Média das notas = ${media}.`);
+    } else if (media >= 0 && media < 4){
+        resultado2Ex14.innerHTML = (`Média de Aproveitamento E. Média das notas = ${media}.`);
+    } else {
+        resultado2Ex14.innerHTML = (`Valor INVÁLIDO.`);
+    }
+}
+
+let botao2_ex14 = document.querySelector('#botao2_14');
+botao2_ex14.addEventListener('click', Ativar2_decimoQuartoEx);
 //exercicio 2.15------------------------------------------------------
 //exercicio 2.16------------------------------------------------------
 //exercicio 2.17------------------------------------------------------
